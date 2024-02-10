@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <div class="video-background">
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltce292b05bc900c63/659c99223ea361883557812f/VALORANT_EP8124_001_R007_InGameHomepage_v01_For_Website_Mobile_v2.mp4" type="video/mp4">
+        </video>
+        <div class="logo-container">
+            <img src="~/images/val_logo.png" alt="Logo">
+        </div>
+    </div>
+    <div class="content-section">
+        <h1>WHAT IS VALORANT</h1>
+        <p>VALORANT is a free-to-play first-person shooter game developed and published by Riot Games, known for its tactical gameplay and precise gunplay. It combines elements from hero shooters and traditional tactical shooters, offering an engaging experience for both casual and competitive players.
+            <br>
+            <br>
+            The main reason why I like this game more than others is how important the communication is in this game. Since it's a 5v5 tactical shooter, without communication with your teammates, you have little to no chances of winning against an organized team.
+
+        </p>
+    </div>
+    <div class="dark-section">
+        <img src="~/images/val_image1.jpg" alt="Image 1" class="staggered-image first-image">
+        <br><br>
+        <img src="~/images/val_image2.jpg" alt="Image 2" class="staggered-image second-image">
+    </div>
+    <div class="content-section">
+        <h1>LEARN TO PLAY VALORANT</h1>
+        <p>
+            For a small price, I will teach you how to get better at VALORANT regardless of your experience with the game or fps genre in general.
+            <br>
+            <br>
+            I have over 1000 hours in the game and have reached Immortal rank. Moreover, I compete in the collegiate tournaments for the Brigham Young University team. With my deep knowledge of the game, I will turn you from a total noob to a champion!
+            <br><br>
+            <a href="@Url.Action("Coaching", "Home")" class="btn get-coached-btn">GET COACHED</a>
+        </p>
+    </div>
+</div>

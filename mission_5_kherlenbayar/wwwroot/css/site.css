@@ -1,0 +1,236 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.video-background {
+    position: relative;
+    width: 100vw;
+    height: 75vh;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Ensures the logo is above the video */
+}
+.content-section {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff; /* Or any color that fits your design */
+    color: #000; /* Adjust text color as needed */
+}
+
+
+.content-section h1 {
+    font-family: 'Impact', sans-serif; /* A bold, impactful font */
+    color: #FF4655; /* Keeping your VALORANT red color */
+    margin-bottom: 1rem;
+    font-size: 5rem; /* Significantly larger size, adjust as needed */
+}
+
+body, .main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-center {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Ensure this container spans the full width */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body, html, .text-center, .video-background {
+    margin: 0;
+    padding: 0;
+}
+
+.video-background {
+    max-width: none;
+}
+
+.text-center {
+    text-align: left; /* Temporarily override to check effect */
+}
+
+.full-width-container {
+    width: 100vw;
+    max-width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.video-background {
+    margin-left: -20px; /* Adjust as needed */
+    margin-right: -1px; /* Adjust if you want to ensure it stretches slightly more than 100vw */
+    width: calc(100vw + 2px); /* Compensate for the negative margins */
+}
+
+.content-section {
+    text-align: center;
+    padding: 2rem 20rem; /* Adjust the 4rem as needed for your desired spacing */
+    background-color: #fff;
+    color: #000;
+}
+
+
+.content-section p {
+    font-size: 1.2rem; /* Slightly larger than default, adjust as needed */
+    color: #333; /* Dark grey color */
+}
+
+/* Reset any specific positioning styles for .dark-section and images */
+.dark-section {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: #111; /* Dark background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    overflow: hidden;
+}
+
+
+.staggered-image {
+    width: 60%; /* Adjust the width as needed, up to 100% of the container width */
+    margin: 10px 0; /* Add some vertical space between the images */
+    transition: transform 0.3s ease; /* Optional: smooth transition effect on hover */
+}
+
+/* Specific styles for the first and second image to create a staggered effect */
+.first-image {
+    align-self: flex-start; /* Align the first image to the start (left) */
+}
+
+.second-image {
+    align-self: flex-end; /* Align the second image to the end (right) */
+    margin-top: -20px; /* Negative margin to create overlap and stagger effect */
+}
+
+/* Ensure the dark section container can grow in height based on content */
+.dark-section {
+    overflow: hidden; /* Hide overflow */
+}
+.get-coached-btn {
+    background-color: #FF4655; /* Sharp red background */
+    color: #ffffff; /* White text */
+    display: inline-block; /* Allows setting padding and other block-level properties */
+    padding: 20px 80px; /* Adjust padding as needed for size */
+    text-align: center;
+    text-decoration: none; /* Removes underline from anchor tags */
+    border: none; /* Removes the default border */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    border-radius: 0; /* Sharp corners for the rectangle shape */
+}
+
+.get-coached-btn:hover {
+    background-color: #e60000; /* Slightly darker red on hover for feedback */
+}
+
+
+.coaching-calculator {
+    background-color: #2a2a2a; /* Dark background for sharp design */
+    color: #ffffff; /* White text color */
+    padding: 20px;
+    max-width: 600px; /* Adjust based on your layout */
+    margin: 20px auto; /* Center the calculator in the view */
+    border: 2px solid #ff4654; /* Valorant red border */
+}
+
+.coaching-calculator label, .coaching-calculator input, .coaching-calculator button, .coaching-calculator a.back-home {
+    display: block; /* Make each element take its own line */
+    margin: 10px 0; /* Spacing between elements */
+    width: 100%;
+}
+
+.coaching-calculator input, .coaching-calculator button, .coaching-calculator a.back-home {
+    padding: 10px;
+    border: 1px solid #ff4654; /* Valorant red for input borders and button */
+    background-color: #1e1e1e; /* Slightly lighter dark background for input fields and button */
+    color: #ffffff; /* White text for inputs and button */
+    border-radius: 0; /* Sharp corners */
+}
+
+.coaching-calculator button:hover, .coaching-calculator a.back-home:hover {
+    background-color: #ff4654; /* Valorant red background on hover */
+    color: #1e1e1e; /* Dark text on hover */
+}
+
+.coaching-calculator input[readonly] {
+    background-color: #3a3a3a; /* Distinguish readonly inputs with a different background */
+}
+
+.coaching-calculator a.back-home {
+    text-align: center;
+    text-decoration: none; /* Remove underline from link */
+    margin-top: 20px; /* Extra spacing above the back link */
+}
+body.coaching-page {
+    /* Styles that only apply to the body of the coaching page */
+    background-image: url('/images/val_bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+body.coaching-page::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1; /* Ensure the background is behind all content */
+    display: block;
+    background-image: url('/images/val_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+

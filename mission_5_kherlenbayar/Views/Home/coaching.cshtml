@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Coaching Calculator";
+    ViewData["BodyClass"] = "coaching-page";
+}
+
+<div class="coaching-calculator">
+    <label for="hours">How many hours of coaching do you need?</label>
+    <input type="number" id="hours" name="hours" placeholder="Enter hours here" min="1">
+
+    <label for="rate">How much I charge hourly ($):</label>
+    <input type="text" id="rate" name="rate" value="29.99" readonly disabled>
+
+    <button id="calculate">Calculate Total</button>
+
+    <label for="total">Your Total Cost ($):</label>
+    <input type="text" id="total" name="total" readonly>
+
+    <a href="/" class="back-home">Back to Home</a>
+</div>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
